@@ -8,7 +8,7 @@ import youtube from "../../Photo/YouTube.png";
 import "../TeamInfo/TeamInfo.css";
 import male from "../../Photo/male.png";
 import female from "../../Photo/female.png";
-import { Link } from "react-router-dom";
+
 
 const TeamInfo = (props) => {
   const { strTeam, strCountry, strSport, intFormedYear, strGender, strTeamBanner } = props.de;
