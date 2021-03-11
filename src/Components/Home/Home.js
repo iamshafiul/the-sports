@@ -22,8 +22,8 @@ const Home = () => {
         <Container>
           <Row>
             {teams.map((team) => (
-              <Col xs={4} md={4} sm={12} xs={12}>
-                <Team team={team}></Team>
+              <Col md={4} sm={12} xs={12}>
+                <Team key={team.idTeam} team={team}></Team>
               </Col>
             ))}
           </Row>
