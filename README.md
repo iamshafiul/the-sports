@@ -1,3 +1,15 @@
+# Project Name
+Team Tracker.
+
+# Project link 
+
+[live site](https://604a2c02b0fd7d008d1645a1--sleepy-dubinsky-a99e49.netlify.app/).
+
+### `About This Site`
+
+This is a Responsive Website .Applicable to all types of devices.
+Bootstrap has been used for Responsive.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
