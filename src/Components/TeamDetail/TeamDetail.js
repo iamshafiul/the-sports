@@ -12,7 +12,7 @@ const TeamDetail = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDetail(data.teams));
-  }, []);
+  }, [teamId]);
 
   return (
     <div>
