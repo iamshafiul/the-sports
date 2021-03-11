@@ -1,0 +1,11 @@
+.team-header img{
+    width: 100%;
+}
+
+ .social-icon a img{
+    background: rgb(80, 110, 247);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    
+} 

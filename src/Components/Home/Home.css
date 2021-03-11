@@ -1,0 +1,17 @@
+.home-header{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-header img{
+    width: 100%;
+}
+
+
+@media (max-width: 768px) { 
+    .home-header{
+        height: 100%;
+        width: 100%;
+    }
+}
