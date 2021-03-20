@@ -135,12 +135,9 @@ function Login() {
           </Link>
         </Form.Group>
       </Form>
-      {/* end form  */}
       <h2 className="text-center line">or</h2>
       <div className="google-login-button text-center">
         {user.isSigned ? <button onClick={signOut}> <FontAwesomeIcon icon={faGoogle} /> sign out</button> : <button onClick={googleSignIn}> <FontAwesomeIcon icon={faGoogle} /> sign in</button>}
-        <br></br>
-        {user.isSigned ? <button onClick={signOut}> <FontAwesomeIcon icon={faFacebook} /> sign out</button> : <button onClick={googleSignIn}> <FontAwesomeIcon icon={faFacebook} /> sign in</button>}
       </div>
       <p style={{ color: "red" }}>{user.error}</p>
       {user.success && <p style={{ color: "green" }}>User {newUser ? "Created" : "loged In"} Successfully</p>}
