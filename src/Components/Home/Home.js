@@ -2,35 +2,24 @@ import React, { useEffect, useState } from "react";
 import {Col, Container, Row } from "react-bootstrap";
 import "../Home/Home.css";
 import Team from "../Team/Team";
-import banner from '../../Photo/banner.jpg';
+import uberData from '../../data/data.json';
 
 const Home = () => {
-  const [teams, setTeam] = useState([]);
+  const [transfort, setTransfort] = useState([]);
   useEffect(() => {
-    const url = "https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League";
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setTeam(data.teams));
+   setTransfort(uberData);
   }, []);
   return (
-    <div>
-      <div className="home-header">
-        <img src={banner} alt="banner"/>
-      </div>
-      <div className="home-body bg-dark pt-5">
-      {
+    <div className="home-bg">
         <Container>
           <Row>
-            {teams.map((team) => (
-              <Col md={4} sm={12} xs={12}>
-                <Team key={team.idTeam} team={team}></Team>
+            {transfort.map((transfort) => (
+              <Col md={3} sm={12} xs={12}>
+                <Team key={transfort.idTeam} transfort={transfort}></Team>
               </Col>
             ))}
           </Row>
         </Container>
-      }
-      </div>
-      
     </div>
   );
 };

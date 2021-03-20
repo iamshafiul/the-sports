@@ -1,0 +1,36 @@
+.line{
+    position: relative;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    background: #000;
+    height: 2px;
+    width: 17%;
+    left: 30%;
+    top: 67%;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    background: #000;
+    height: 2px;
+    width: 17%;
+    right: 30%;
+    top: 67%;
+}
+
+.google-login-button button{
+    width: 250px;
+    font-size: 22px;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+
+.form-bg{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(236, 165, 165,0.5), rgba(87, 87, 71,0.5), rgba(52, 83, 52,0.5));
+   
+}
+

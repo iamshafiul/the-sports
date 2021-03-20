@@ -1,0 +1,18 @@
+[{
+    "id": 1,
+    "name": "Bike",
+    "image": "https://wallpaperaccess.com/full/4441.jpg"
+  }, {
+    "id": 2,
+    "name": "Car",
+    "image":"https://images.caricos.com/a/audi/2020_audi_q7/images/1920x1080/2020_audi_q7_9_1920x1080.jpg" 
+  }, {
+    "id": 3,
+    "name": "Bus",
+    "image": "https://www.pngitem.com/pimgs/m/248-2488389_sri-kaleswari-brothers-bus-hd-png-download.png"
+  },  {
+    "id": 4,
+    "name": "Train",
+    "image": "https://image.winudf.com/v2/image/Y29tLmFmbXNvZnQudHJhaW5oZC53YWxscGFwZXJfc2NyZWVuc2hvdHNfMF9mNzRhYzMzZg/screen-0.jpg?fakeurl=1&type=.jpg"
+    
+  }]
