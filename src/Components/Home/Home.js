@@ -15,7 +15,7 @@ const Home = () => {
           <Row>
             {transfort.map((transfort) => (
               <Col md={3} sm={12} xs={12}>
-                <Team key={transfort.idTeam} transfort={transfort}></Team>
+                <Team key={transfort.id} transfort={transfort}></Team>
               </Col>
             ))}
           </Row>

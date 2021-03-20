@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../../App";
 import "../Book/Book.css";
 
-const Book = () => {
+const Book = (props) => {
+  const { name, id,image } = props.transfort;
+
   const { register, handleSubmit, watch, errors } = useForm();
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const onSubmit = (data) => console.log(data);
@@ -25,7 +27,7 @@ const Book = () => {
           <Form.Control type="text" placeholder="Dhanmondi" />
         </Form.Group>
         <Button className="btn-block" variant="primary" type="submit">
-        <Link to="/about" className="text-white text-decoration-none">Submit</Link> 
+        <Link to={`/book/${id}`} className="text-white text-decoration-none">Submit</Link> 
         </Button>
       </Form>
     </Container>
